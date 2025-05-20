@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor of Secondary Education (BSED) | Future Educators</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4f46e5 0%, #10b981 100%);
+        }
+        .specialization-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 32px;
+            height: calc(100% - 32px);
+            width: 2px;
+            background-color: #e5e7eb;
+        }
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+
+
+         <style>
+    .container {
+      display: flex;
+      align-items: center; /* center vertically */
+    }
+    .container img {
+      width: 200px;
+      margin-right: 20px; /* space between image and text */
+    }
+    .definition {
+      max-width: 400px;
+    }
+  </style>
+</head>
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-chalkboard-teacher text-indigo-600 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold text-gray-800">BSED Program</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-gray-800 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#specializations" class="text-gray-800 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Specializations</a>
+                        <a href="#curriculum" class="text-gray-800 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Curriculum</a>
+                        <a href="#events" class="text-gray-800 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Events</a>
+                        
+                        <a href="#careers" class="text-gray-800 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium">Careers</a>
+                       
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-indigo-600 hover:bg-gray-100 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-indigo-600 hover:bg-gray-50">About</a>
+                <a href="#specializations" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-indigo-600 hover:bg-gray-50">Specializations</a>
+                <a href="#curriculum" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-indigo-600 hover:bg-gray-50">Curriculum</a>
+                <a href="#events" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-indigo-600 hover:bg-gray-50">Events</a>
+
+                <a href="#careers" class="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:text-indigo-600 hover:bg-gray-50">Careers</a>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Bachelor of Secondary Education</h1>
+                    <p class="text-xl mb-8">Shaping the future by educating the next generation of leaders, thinkers, and innovators.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        
+                        <a href="#specializations" class="border-2 border-white text-white hover:bg-white hover:text-indigo-600 px-6 py-3 rounded-lg font-semibold text-center">Admission</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                     <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/497504093_1676539763006495_8067564299668958419_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeE5ueGwsIZx5CVLkqh26yAK8YadwrQd777xhp3CtB3vvpoitWLzeLaBzivX6-t4LVf9ZRElq6cagPCyU8OglHe2&_nc_ohc=M10MGsZrHPgQ7kNvwEdmsE6&_nc_oc=Adkk0uwehpiRZ4YilOHO_BGQIjoyMHnmBes6d2CVeiHLxvD9xLjNQrALELuIZG2RrZE&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=XRJRlxm5kkHhWsmRduikIg&oh=00_AfKZl-GFw_TgRLJu8fPpGCKrDYuVrj6rLS8Bu1S1upjs8g&oe=682B456C" alt="Students learning" class="rounded-lg shadow-2xl max-w-full h-auto">                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About BSED Program</h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            <div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/497815076_1676539703006501_3889017866333890620_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGdBeveenKZya-QxkJwImfeUzReuMVcqNpTNF64xVyo2mf-QCBpN8XfVMfzhJDOVAn5U-L-SEF-DvtjERI5DLdF&_nc_ohc=pus90JSsYvIQ7kNvwFXCQAN&_nc_oc=Adn2TqSGeZd5zOvVlwzEtQ8EE6Ee0GhLl0is5mTYj6TC9noKjQs2mvl677w9hR5YYIY&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=-hSEI-t46kaBJinTDxXrMg&oh=00_AfL_8kLOJv3Qnpb5QY8KWpaAUoZVPxHSUxOHvGpWab4BqQ&oe=682B65C2" alt="Students learning" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        The Bachelor of Secondary Education (BSED) is a four-year undergraduate program designed to prepare students for teaching in secondary schools. This program equips future educators with the necessary knowledge, skills, and values to effectively teach in their chosen area of specialization.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        BSED graduates are trained to develop lesson plans, facilitate learning, assess student performance, and create a conducive learning environment. The program combines theoretical foundations with practical teaching experiences through field studies and practice teaching.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-graduation-cap text-indigo-600"></i>
+                            </div>
+                            <span class="font-medium">4-Year Program</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-chalkboard text-indigo-600"></i>
+                            </div>
+                            <span class="font-medium">Practical Training</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-book text-indigo-600"></i>
+                            </div>
+                            <span class="font-medium">Comprehensive Curriculum</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-users text-indigo-600"></i>
+                            </div>
+                            <span class="font-medium">Licensure Exam Prep</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specializations Section -->
+    <section id="specializations" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Program Specializations</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Choose your area of expertise to focus your teaching career</p>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- English -->
+                <div class="specialization-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-indigo-600 p-4 text-white">
+                        <i class="fas fa-book-open text-3xl mb-2"></i>
+                        <h3 class="text-xl font-bold">English</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Focuses on developing expertise in English language, literature, and communication skills.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-indigo-500 mt-1 mr-2"></i>
+                                <span>Literature Studies</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-indigo-500 mt-1 mr-2"></i>
+                                <span>Linguistics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-indigo-500 mt-1 mr-2"></i>
+                                <span>Creative Writing</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Mathematics -->
+                <div class="specialization-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-blue-600 p-4 text-white">
+                        <i class="fas fa-square-root-alt text-3xl mb-2"></i>
+                        <h3 class="text-xl font-bold">Mathematics</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Equips students with advanced mathematical concepts and effective teaching methodologies.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Algebra & Geometry</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Calculus</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-2"></i>
+                                <span>Statistics</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Science -->
+                <div class="specialization-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-green-600 p-4 text-white">
+                        <i class="fas fa-flask text-3xl mb-2"></i>
+                        <h3 class="text-xl font-bold">Science</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Covers biology, chemistry, physics, and earth science with hands-on laboratory experiences.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Biology</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Chemistry</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Physics</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Social Studies -->
+                <div class="specialization-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 ease-in-out">
+                    <div class="bg-yellow-600 p-4 text-white">
+                        <i class="fas fa-globe-americas text-3xl mb-2"></i>
+                        <h3 class="text-xl font-bold">Social Studies</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Explores history, geography, economics, and political science for comprehensive social education.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-yellow-500 mt-1 mr-2"></i>
+                                <span>World History</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-yellow-500 mt-1 mr-2"></i>
+                                <span>Cultural Studies</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-yellow-500 mt-1 mr-2"></i>
+                                <span>Civics</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Program Curriculum</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A comprehensive four-year journey to becoming a professional educator</p>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- Year 1 -->
+                <div class="timeline-item relative pl-16 pb-12">
+                    <div class="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-600">
+                        <span class="font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">First Year</h3>
+                    <p class="text-gray-600 mb-4">Foundation courses in education principles and general subjects</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Child and Adolescent Development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Teaching Profession</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>General Education Courses</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Content Courses in Specialization</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Year 2 -->
+                <div class="timeline-item relative pl-16 pb-12">
+                    <div class="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-600">
+                        <span class="font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Second Year</h3>
+                    <p class="text-gray-600 mb-4">Building teaching methodologies and subject matter expertise</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Principles of Teaching</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Assessment of Learning</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Educational Technology</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Field Study 1</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Year 3 -->
+                <div class="timeline-item relative pl-16 pb-12">
+                    <div class="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-600">
+                        <span class="font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Third Year</h3>
+                    <p class="text-gray-600 mb-4">Advanced teaching strategies and classroom management</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Curriculum Development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Specialization Methods</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Field Study 2-5</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Research in Education</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Year 4 -->
+                <div class="timeline-item relative pl-16">
+                    <div class="absolute left-0 top-0 flex items-center justify-center w-12 h-12 rounded-full bg-indigo-100 text-indigo-600">
+                        <span class="font-bold">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Fourth Year</h3>
+                    <p class="text-gray-600 mb-4">Practical teaching experience and preparation for licensure</p>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Practice Teaching</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Thesis/Capstone Project</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Licensure Exam Preparation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-indigo-500 mt-1 mr-2"></i>
+                                <span>Professional Development</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Events -->
+    <section id="careers" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Program Events</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">BSED Education program implemented</p>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+
+
+<div class="md:flex md:items-center md:space-x-12">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+
+
+
+<img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/497616943_1676538389673299_9133708209277457677_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGZO9Y7ERSeFDM97h-oV1Nytki2EsvW3l-2SLYSy9beXwfZ4llEWhDJdVeju3iEWmEJZeO5do5kRmvE5aW6uy_g&_nc_ohc=kfNd1s-hMl0Q7kNvwH1EDIH&_nc_oc=AdlbUxbRxhccLPdxg8fZiHfuoKgBPz6znXzcdQQMnxmSJgyqyKwQlJUOR_UPOAF3V4U&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=Pi3j9DW2Jr1XeZ90h5HXyA&oh=00_AfK7IeOKZ3t7neBPIPx6FSqpyTXAXipiP3la_luKyxFxSw&oe=682B65C1" alt="Students learning" width="rounded-lg shadow-lg w-full">
+<p class="text-gray-600 mb-6 leading-relaxed">
+                        
+                    </p>
+<div class="md:w-full mb-10">
+<img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/497884286_1676538289673309_8064109203011570696_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFlH6vHAMD1fDCae2BiEpNLQ6_A3kgz5w1Dr8DeSDPnDev0zlQgT-TuVoQyPfWp1UaH-qyE6T2G_9VqFvEqP48f&_nc_ohc=glIqGyBLQxMQ7kNvwHKY-gk&_nc_oc=AdlvCFW6eL8B9BF8nSDOwLuBQcCnYFvbdO1leLgQ-xO6Q5rKkq-RhiKHNyiVebFjo74&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=2TjfBAOir2MWp_s2BvP0DA&oh=00_AfLADstxtg3p7uYN7Gl26IzvKEyLIysdHXxdvf4wO_sJ2A&oe=682B543F" alt="Students learning" width="rounded-lg shadow-lg w-full">
+
+<div class="md:w-full mb-10">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        An educational tour is a planned excursion undertaken by students and educators to explore educational destinations outside the classroom, aiming to enhance learning through real-world experiences.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        These tours are designed to complement classroom instruction by providing hands-on activities, exposure to diverse environments and cultures, and opportunities for critical thinking.
+                    </p>
+                    </div>
+                    </div>
+                    <div class="md:w-full mb-10">
+                    <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/497951528_1676538313006640_8311896414555827761_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGVLdgJ8ID4_HkJ4623cdQZl2g-Bd50As6XaD4F3nQCzj7B__AeaYm1l_3oCSkCgWTmYHDooXPDheY6U9hWkV0v&_nc_ohc=boFaihF5-RsQ7kNvwEPOn96&_nc_oc=AdkOFLQrpB6Wr2j9N8bSYOAUc5hXuj2JyZcRbaMSBeNO4AYiyZzi_xicD2s2gWg1ZxA&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=GXhsWTKMvcBpc3_lR3YfkQ&oh=00_AfIHzhgAlLkIIPsCyC7X4r6HdKWcz1rwqqdxOUKOOO4Wpw&oe=682B6685" alt="Students learning" width="rounded-lg shadow-lg w-full">
+                     <p class="text-gray-600 mb-6 leading-relaxed"> 
+                        A Search Event is a formal process or program organized by a school, institution, or organization to identify, recognize, and award individuals who have shown excellence, leadership, or outstanding performance in a specific field. These events often involve nominations, screening, interviews, and final selection of awardees or honorees.
+                    </p>
+                    </div>
+                    <div class="md:w-full mb-10">
+                    <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/497492285_1676538246339980_9037346949995415155_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHnsdMviEPwu9uCKR2MloeVXBJN7xAK4CNcEk3vEArgI8pSM2vVXJE88lizhrEKYgup5TDYpmUokRL89VgaytkV&_nc_ohc=2vIwyHzaOawQ7kNvwGc3Jok&_nc_oc=AdlvB88H8FmbheICD9JYc-nDQbBKku_hhQ3w_GeoWdjIlQNbg3m2-mBSc9g9zxEu-Dg&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=T-O3RM6uFKkMSPFXC0hMQw&oh=00_AfLTheEmRWTfv1FBkxvb8rtnYtovfX5SZjstfxPPG4daYQ&oe=682B5C2E" alt="Students learning" width="rounded-lg shadow-lg w-full">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A pre-service teacher is a student who is currently undergoing formal education and training to become a professional teacher. This includes both theoretical coursework and practical teaching experiences such as internships or student teaching. Pre-service teachers are not yet licensed or certified, but they are preparing for full-time teaching roles by developing skills in lesson planning, classroom management, and student assessment.
+                    </p>
+                    </div>
+                    <div class="md:w-full mb-10">
+                    <img src="https://scontent.fdvo2-2.fna.fbcdn.net/v/t39.30808-6/498255336_1677009792959492_371043011381742529_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF4bORJd6LdmyGQz9Ih4aa-xjKUVZmvG23GMpRVma8bbdwUooduJWzhseEJN7HfYlfQJiRdmbaKek6qPk5LvYdr&_nc_ohc=eeGzQHQrGN4Q7kNvwHK5tkK&_nc_oc=AdmbwSkgeRdf6w-R5EdUYZWVgSceRVVBMVLBYEA1xkqcFIKSNz-eaoUHBNRDWz1Bbdo&_nc_zt=23&_nc_ht=scontent.fdvo2-2.fna&_nc_gid=dinDkbCWuvz0xzL_R7z8WA&oh=00_AfKcjlG3yIXZAl9tsgsIub7nVAjxmrBZ9CZFLesC9scL0A&oe=682C6401" alt="Description of image" width="500">
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A Ring Hop ceremony is a tradition in higher education, particularly in the Philippines, where graduating students receive their class rings, often from parents, loved ones, or faculty. This ceremony marks a significant milestone, signifying the completion of their academic journey and their transition into the next phase of their lives, whether it's professional careers or further studies. The ring itself is a symbolic representation of the graduate's achievement and their connection to their institution.
+                        </p>
+                        </div>
+                        <div class="md:w-full mb-10">
+                        <img src="https://scontent.fdvo2-1.fna.fbcdn.net/v/t39.30808-6/498641417_1678377869489351_7690588926365155001_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEK4Rh7TvVScIoA90qJ4JT4zS2W1zxFkw_NLZbXPEWTD8qxGrKb9ZQpZ7e8JwfGsHnOyp0-J510QX0BL3D2stcr&_nc_ohc=7VBzl-zrGQgQ7kNvwEKvvjN&_nc_oc=AdkzYjSfp9B1UXHAfdqv9-5tyNWGAyTuI1mX-zJUysq5yfI-yWnoksRSOYBH8Wu14OM&_nc_zt=23&_nc_ht=scontent.fdvo2-1.fna&_nc_gid=UgRACYmor3JCTsqUaj9GAg&oh=00_AfI8ZhJVE-AQKN8RmAZmJM449nFe3jIs8UPTRXdpiDp45A&oe=682F8B81" alt="agi si poge" width="500">
+                         <p class="text-gray-600 mb-6 leading-relaxed">
+                       International Education Day, observed annually on January 24th, celebrates the crucial role of education in fostering peace, sustainable development, and global unity. Declared by the United Nations General Assembly, this day recognizes education's power to transform lives, create opportunities, and build resilient societies.
+
+                        </p>
+                        </div>
+
+
+
+
+
+            </div>
+            </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Career Opportunities</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Diverse career paths for BSED graduates</p>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Teaching Career -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-indigo-600 p-6 text-white">
+                        <i class="fas fa-chalkboard-teacher text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Teaching Profession</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-indigo-500 mt-1 mr-3"></i>
+                                <span>Secondary School Teacher (Public or Private)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-indigo-500 mt-1 mr-3"></i>
+                                <span>Subject Area Specialist</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-indigo-500 mt-1 mr-3"></i>
+                                <span>Department Head</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-indigo-500 mt-1 mr-3"></i>
+                                <span>Master Teacher</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Education Sector -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-blue-600 p-6 text-white">
+                        <i class="fas fa-school text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Education Sector</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>Curriculum Developer</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>Instructional Designer</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>Education Consultant</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>Textbook Author/Editor</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Other Opportunities -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="bg-green-600 p-6 text-white">
+                        <i class="fas fa-briefcase text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Other Opportunities</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Corporate Trainer</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Education Policy Analyst</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Tutor/Online Educator</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Non-profit Education Programs</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white rounded-lg shadow-md p-8 text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-4">Licensure Examination for Teachers (LET)</h3>
+                <p class="text-gray-600 mb-6 max-w-3xl mx-auto">
+                    
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-clipboard-check text-indigo-600 text-xl"></i>
+                        </div>
+                        <span class="font-medium">National Passing Rate: ~50%</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-medal text-indigo-600 text-xl"></i>
+                        </div>
+                        <span class="font-medium">Our Graduates: 85%+ Passing Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+                
+                    <
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-indigo-700 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Teaching Journey?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join our BSED program and become part of the next generation of educators shaping young minds.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#" class="bg-white text-indigo-700 hover:bg-gray-100 px-8 py-4 rounded-lg font-bold text-lg">Apply Now</a>
+                <a href="#" class="border-2 border-white text-white hover:bg-white hover:text-indigo-700 px-8 py-4 rounded-lg font-bold text-lg">Request Information</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-chalkboard-teacher mr-2"></i> BSED Program
+                    </h3>
+                    <p class="text-gray-400">
+                        Preparing competent, committed, and compassionate educators for the 21st century classroom.
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About BSED</a></li>
+                        <li><a href="#specializations" class="text-gray-400 hover:text-white">Specializations</a></li>
+                        <li><a href="#curriculum" class="text-gray-400 hover:text-white">Curriculum</a></li>
+                        <li><a href="#events" class="text-gray-400 hover:text-white">Events</a></li>
+                    
+                        <li><a href="#careers" class="text-gray-400 hover:text-white">Careers</a></li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>BRGY.BUENAFLOR,TACURONG CITY</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>(+63) 912 345 6789</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>SMIT.INC.edu</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">
+                        Subscribe to get updates about our BSED program and events.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-800">
+                        <button type="submit" class="bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Bachelor of Secondary Education Program. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
